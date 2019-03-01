@@ -6,7 +6,7 @@ public class EmployeeTest{
       /* 使用构造器创建两个对象 */
       Employee empOne = new Employee("James Smith");
       Employee empTwo = new Employee("Mary Anne");
-      Puppy empthr = new Puppy("\"This is  in quotes\"" );
+      Puppy empthr = new Puppy(2);
       
       // 调用这两个对象的成员方法
       empOne.empAge(26);

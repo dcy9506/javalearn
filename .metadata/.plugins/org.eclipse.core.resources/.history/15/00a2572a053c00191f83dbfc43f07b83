@@ -1,0 +1,11 @@
+package study;
+
+public class count {
+    public  count(int a) {
+        a=a+1;
+    	System.out.println("a=" + a);
+    }
+    public static void main(String []args) {
+    	count count1 = new count(3);
+    }
+}
