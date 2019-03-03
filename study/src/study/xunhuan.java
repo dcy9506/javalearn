@@ -1,4 +1,6 @@
 package study;
+import java.io.*;
+import java.util.Scanner;
 
 public class xunhuan {
 	public xunhuan(int b) {
@@ -11,18 +13,43 @@ public class xunhuan {
 		System.out.print("c=" +c +"\n");
 	}
 	
-	public int qiuji(int q) {
+	public int qiuji(int i) {
+		 
 		int y=1;
-		while (q>0) {
-			y=y*q;
-			q-=1;
+		while (i>0) {
+			y=y*i;
+			i-=1;
+			
 		}
 		System.out.println("y="+y);
 		return y;
 	}
 	
-	public static void main(String []as) {
-		xunhuan c1 =new xunhuan(21);	
-		c1.qiuji(10);
-	}
+//	public static void main(String []as) throws IOException{
+//		System.out.print("Enter a int:"); 
+//	    int k = (int) System.in.read(); 
+//		xunhuan c1 =new xunhuan(k);	
+//		c1.qiuji(k);
+//	}
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.println("请输入一个整数：");
+		int length=input.nextInt();//输入一个整数
+		System.out.println("输入的整数是："+length);
+		xunhuan c2 = new xunhuan(length);
+		c2.qiuji(length);
+		
+		}
 }
+
+
+
+
+
+
+
+
+
+
+
+
